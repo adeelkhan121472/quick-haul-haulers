@@ -63,7 +63,9 @@ export default function Home() {
       <div className="home">
         {/* Hero Section with SEO-optimized headings */}
         <section className="hero">
-          <div className="hero-overlay"></div>
+          <div className="hero-background">
+            <div className="hero-pattern"></div>
+          </div>
           <div className="hero-content">
             <span className="hero-badge">America's #1 Hauler Rental Service</span>
             <h1>Premium Hauler Rentals Made Simple</h1>
