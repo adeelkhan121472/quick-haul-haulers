@@ -20,9 +20,9 @@
   bottom: 0;
   z-index: 0;
   background:
-    linear-gradient(135deg, rgba(0, 102, 204, 0.9) 0%, rgba(0, 76, 153, 0.85) 100%),
-    repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255, 255, 255, 0.03) 35px, rgba(255, 255, 255, 0.03) 70px);
-  animation: backgroundShift 60s linear infinite;
+    linear-gradient(135deg, rgba(0, 102, 204, 0.75) 0%, rgba(0, 76, 153, 0.85) 100%),
+    url('/images/Banner%20Image.png') center/cover no-repeat;
+  background-size: auto, cover;
 }
 
 @keyframes backgroundShift {
