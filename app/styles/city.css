@@ -1,0 +1,514 @@
+/* City Page Styles */
+
+.city-page {
+  min-height: 100vh;
+}
+
+/* City Hero */
+.city-hero {
+  padding: 80px 20px;
+  color: white;
+  text-align: center;
+}
+
+.city-hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.city-icon-large {
+  font-size: 5rem;
+  margin-bottom: 20px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.city-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.city-tagline {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  opacity: 0.95;
+  font-weight: 600;
+}
+
+.city-hero-description {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.hero-cta-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-cta-primary,
+.hero-cta-secondary {
+  padding: 15px 35px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.hero-cta-primary {
+  background: white;
+  color: var(--primary-blue);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero-cta-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero-cta-secondary {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid white;
+}
+
+.hero-cta-secondary:hover {
+  background: white;
+  color: var(--primary-blue);
+  transform: translateY(-3px);
+}
+
+/* City About */
+.city-about {
+  padding: 60px 20px;
+  background: white;
+}
+
+.city-about h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: var(--dark-gray);
+  margin-bottom: 25px;
+  font-weight: 800;
+}
+
+.city-long-description {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--medium-gray);
+  text-align: center;
+}
+
+/* City Features */
+.city-features {
+  padding: 60px 20px;
+  background: var(--light-gray);
+}
+
+.city-features h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: var(--dark-gray);
+  margin-bottom: 40px;
+  font-weight: 800;
+}
+
+.city-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.city-feature-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  border-top: 4px solid var(--primary-blue);
+}
+
+.city-feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-top-color: var(--secondary-orange);
+}
+
+.city-feature-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.city-feature-card h3 {
+  font-size: 1.3rem;
+  color: var(--primary-blue);
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.city-feature-card p {
+  color: var(--medium-gray);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Pricing Section */
+.city-pricing {
+  padding: 60px 20px;
+  background: white;
+}
+
+.city-pricing h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: var(--dark-gray);
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.pricing-intro {
+  text-align: center;
+  font-size: 1.05rem;
+  color: var(--medium-gray);
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pricing-card {
+  background: var(--light-gray);
+  padding: 35px 25px;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 3px solid transparent;
+}
+
+.pricing-card:hover {
+  border-color: var(--secondary-orange);
+  transform: scale(1.05);
+  box-shadow: var(--shadow-lg);
+  background: white;
+}
+
+.pricing-card h3 {
+  font-size: 1.5rem;
+  color: var(--primary-blue);
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.price {
+  font-size: 2.5rem;
+  color: var(--secondary-orange);
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.price-note {
+  font-size: 0.85rem;
+  color: var(--medium-gray);
+  margin-bottom: 15px;
+}
+
+.ideal-for {
+  color: var(--medium-gray);
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.ideal-for strong {
+  color: var(--dark-gray);
+}
+
+.order-button {
+  display: inline-block;
+  background: var(--primary-blue);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.order-button:hover {
+  background: var(--secondary-orange);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+}
+
+/* Neighborhoods */
+.city-neighborhoods {
+  padding: 60px 20px;
+  background: var(--light-gray);
+}
+
+.city-neighborhoods h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: var(--dark-gray);
+  margin-bottom: 35px;
+  font-weight: 800;
+}
+
+.neighborhoods-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.neighborhood-tag {
+  background: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  color: var(--primary-blue);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.neighborhood-tag:hover {
+  background: var(--primary-blue);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+/* City Testimonials */
+.city-testimonials {
+  padding: 60px 20px;
+  background: white;
+}
+
+.city-testimonials h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: var(--dark-gray);
+  margin-bottom: 40px;
+  font-weight: 800;
+}
+
+.city-testimonials .testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.city-testimonials .testimonial-card {
+  background: var(--light-gray);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  border-left: 4px solid var(--primary-blue);
+}
+
+.city-testimonials .testimonial-card:hover {
+  transform: translateX(5px);
+  box-shadow: var(--shadow-md);
+  border-left-color: var(--secondary-orange);
+  background: white;
+}
+
+.testimonial-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--dark-gray);
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.testimonial-author {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.testimonial-author strong {
+  color: var(--primary-blue);
+  font-size: 1.05rem;
+}
+
+.testimonial-author span {
+  color: var(--medium-gray);
+  font-size: 0.9rem;
+}
+
+/* City CTA */
+.city-cta {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #0066CC 0%, #004C99 100%);
+  color: white;
+  text-align: center;
+}
+
+.city-cta h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.city-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  opacity: 0.95;
+}
+
+.city-cta .cta-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.city-cta .cta-button-primary,
+.city-cta .cta-button-secondary {
+  padding: 15px 35px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.05rem;
+  transition: all 0.3s ease;
+}
+
+.city-cta .cta-button-primary {
+  background: var(--secondary-orange);
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.city-cta .cta-button-primary:hover {
+  background: #FF8C5A;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+}
+
+.city-cta .cta-button-secondary {
+  background: white;
+  color: var(--primary-blue);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.city-cta .cta-button-secondary:hover {
+  background: var(--light-gray);
+  transform: translateY(-2px);
+}
+
+/* City Not Found */
+.city-not-found {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.city-not-found h1 {
+  font-size: 2.5rem;
+  color: var(--dark-gray);
+  margin-bottom: 20px;
+}
+
+.city-not-found a {
+  background: var(--primary-blue);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.city-not-found a:hover {
+  background: var(--secondary-orange);
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .city-icon-large {
+    font-size: 4rem;
+  }
+
+  .city-hero h1 {
+    font-size: 2rem;
+  }
+
+  .city-tagline {
+    font-size: 1.1rem;
+  }
+
+  .city-hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-cta-buttons {
+    flex-direction: column;
+  }
+
+  .hero-cta-primary,
+  .hero-cta-secondary {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .city-features-grid,
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .neighborhoods-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .city-testimonials .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .city-cta .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .city-cta .cta-button-primary,
+  .city-cta .cta-button-secondary {
+    width: 100%;
+    max-width: 300px;
+  }
+}

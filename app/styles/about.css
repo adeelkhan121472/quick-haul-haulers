@@ -1,0 +1,476 @@
+/* About Page Styles */
+
+.about-page {
+  min-height: 100vh;
+}
+
+/* About Hero */
+.about-hero {
+  background: linear-gradient(135deg, #0066CC 0%, #004C99 100%);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  opacity: 0.95;
+  font-weight: 600;
+}
+
+/* Our Story Section */
+.our-story-section {
+  padding: 80px 20px;
+  background: white;
+}
+
+.story-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.story-text h2 {
+  font-size: 2.5rem;
+  color: var(--primary-blue);
+  margin-bottom: 25px;
+  font-weight: 800;
+}
+
+.story-text p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--medium-gray);
+  margin-bottom: 20px;
+}
+
+.story-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.stat-box {
+  background: var(--light-gray);
+  padding: 30px 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border-top: 4px solid var(--primary-blue);
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-top-color: var(--secondary-orange);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary-blue);
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  font-size: 0.95rem;
+  color: var(--medium-gray);
+  font-weight: 600;
+}
+
+/* Values Section */
+.values-section {
+  padding: 80px 20px;
+  background: var(--light-gray);
+}
+
+.values-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--dark-gray);
+  margin-bottom: 50px;
+  font-weight: 800;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.value-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  border-top: 4px solid var(--primary-blue);
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-top-color: var(--secondary-orange);
+}
+
+.value-icon {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.value-card h3 {
+  font-size: 1.5rem;
+  color: var(--primary-blue);
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.value-card p {
+  color: var(--medium-gray);
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* Why Choose Us Section */
+.why-choose-section {
+  padding: 80px 20px;
+  background: white;
+}
+
+.why-choose-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--dark-gray);
+  margin-bottom: 50px;
+  font-weight: 800;
+}
+
+.features-list {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.feature-item {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 2px solid var(--light-gray);
+}
+
+.feature-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.feature-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--secondary-orange);
+  flex-shrink: 0;
+  width: 80px;
+}
+
+.feature-content h3 {
+  font-size: 1.6rem;
+  color: var(--primary-blue);
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.feature-content p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--medium-gray);
+}
+
+/* Environmental Section */
+.environmental-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #00C896 0%, #00A078 100%);
+  color: white;
+}
+
+.environmental-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.environmental-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.env-intro {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 50px;
+  opacity: 0.95;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.env-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.env-stat {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 35px 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.env-stat:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-5px);
+}
+
+.env-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.env-number {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.env-stat p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.env-details {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  text-align: left;
+}
+
+.env-details h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.env-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.env-list li {
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.env-list li::before {
+  content: '✓ ';
+  margin-right: 8px;
+  font-weight: 800;
+}
+
+/* Service Areas About */
+.service-areas-about {
+  padding: 80px 20px;
+  background: var(--light-gray);
+  text-align: center;
+}
+
+.service-areas-about h2 {
+  font-size: 2.5rem;
+  color: var(--dark-gray);
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.areas-description {
+  font-size: 1.1rem;
+  color: var(--medium-gray);
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cities-grid-about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.city-item {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--primary-blue);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.city-item:hover {
+  background: var(--primary-blue);
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+/* About CTA */
+.about-cta {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #0066CC 0%, #004C99 100%);
+  color: white;
+  text-align: center;
+}
+
+.about-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.about-cta p {
+  font-size: 1.15rem;
+  margin-bottom: 35px;
+  opacity: 0.95;
+}
+
+.about-cta .cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-btn-primary,
+.cta-btn-secondary {
+  padding: 16px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.cta-btn-primary {
+  background: var(--secondary-orange);
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-btn-primary:hover {
+  background: #FF8C5A;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+}
+
+.cta-btn-secondary {
+  background: white;
+  color: var(--primary-blue);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-btn-secondary:hover {
+  background: var(--light-gray);
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 968px) {
+  .story-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .feature-item {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .feature-number {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .story-text h2,
+  .values-section h2,
+  .why-choose-section h2,
+  .environmental-content h2,
+  .service-areas-about h2,
+  .about-cta h2 {
+    font-size: 2rem;
+  }
+
+  .story-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .env-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .env-list {
+    grid-template-columns: 1fr;
+  }
+
+  .cities-grid-about {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-btn-primary,
+  .cta-btn-secondary {
+    width: 100%;
+    max-width: 300px;
+  }
+}

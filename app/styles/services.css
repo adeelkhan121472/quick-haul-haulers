@@ -1,0 +1,272 @@
+.page-header {
+  background: var(--gradient-primary);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.page-header p {
+  font-size: 1.3rem;
+  opacity: 0.95;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.services-content {
+  padding: 80px 20px;
+}
+
+.service-category {
+  margin-bottom: 80px;
+}
+
+.service-category h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: var(--dark-gray);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px 30px;
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+  position: relative;
+  border: 2px solid transparent;
+}
+
+.service-card.featured {
+  border: 2px solid var(--secondary-orange);
+  transform: scale(1.05);
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  background: var(--gradient-warm);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.price-tag {
+  background: var(--gradient-cool);
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 800;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.price-tag-featured {
+  background: var(--gradient-warm);
+}
+
+.service-card h3 {
+  font-size: 1.8rem;
+  color: var(--primary-blue);
+  margin-bottom: 10px;
+}
+
+.service-dimension {
+  color: var(--medium-gray);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  color: var(--dark-gray);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.service-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.service-card ul li {
+  padding: 10px 0;
+  color: var(--dark-gray);
+  position: relative;
+  padding-left: 30px;
+}
+
+.service-card ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--accent-green);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.order-button {
+  display: block;
+  background: var(--gradient-warm);
+  color: white;
+  text-align: center;
+  padding: 15px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+}
+
+.order-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+}
+
+.rental-process {
+  background: var(--light-gray);
+  padding: 60px 20px;
+  border-radius: 20px;
+  margin: 80px 0;
+}
+
+.rental-process h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: var(--dark-gray);
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.step {
+  text-align: center;
+  background: white;
+  padding: 40px 20px;
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.step-number {
+  background: var(--gradient-primary);
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0 auto 20px;
+}
+
+.step h3 {
+  font-size: 1.5rem;
+  color: var(--primary-blue);
+  margin-bottom: 15px;
+}
+
+.step p {
+  color: var(--medium-gray);
+  line-height: 1.6;
+}
+
+.faq-section {
+  margin: 80px 0;
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: var(--dark-gray);
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  border-left: 4px solid var(--primary-blue);
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateX(5px);
+}
+
+.faq-item h3 {
+  color: var(--primary-blue);
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.faq-item p {
+  color: var(--dark-gray);
+  line-height: 1.7;
+}
+
+@media screen and (max-width: 768px) {
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .page-header p {
+    font-size: 1.1rem;
+  }
+
+  .service-card.featured {
+    transform: scale(1);
+  }
+
+  .services-grid,
+  .process-steps,
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+}

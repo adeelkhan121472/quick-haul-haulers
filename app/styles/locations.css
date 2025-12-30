@@ -1,0 +1,354 @@
+/* Locations Page Styles */
+
+.locations-page {
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.locations-hero {
+  background: linear-gradient(135deg, #0066CC 0%, #004C99 100%);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.locations-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  opacity: 0.95;
+}
+
+/* Locations Grid Section */
+.locations-grid-section {
+  padding: 60px 20px;
+  background: var(--light-gray);
+}
+
+.locations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.location-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  border-top: 4px solid var(--primary-blue);
+}
+
+.location-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-top-color: var(--secondary-orange);
+}
+
+.location-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.location-card h2 {
+  font-size: 1.6rem;
+  color: var(--primary-blue);
+  margin-bottom: 8px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.coverage-area {
+  text-align: center;
+  color: var(--secondary-orange);
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.location-description {
+  color: var(--medium-gray);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.location-features {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--light-gray);
+}
+
+.feature-tag {
+  color: var(--accent-green);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.location-contact {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.location-phone {
+  display: block;
+  text-align: center;
+  color: var(--primary-blue);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 6px;
+  background: var(--light-gray);
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.location-phone:hover {
+  background: var(--primary-blue);
+  color: white;
+  transform: scale(1.02);
+}
+
+.location-cta {
+  display: block;
+  text-align: center;
+  background: var(--secondary-orange);
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.location-cta:hover {
+  background: #FF8C5A;
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+}
+
+/* Coverage Section */
+.coverage-section {
+  padding: 60px 20px;
+  background: white;
+  text-align: center;
+}
+
+.coverage-section h2 {
+  font-size: 2.2rem;
+  color: var(--dark-gray);
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.coverage-intro {
+  max-width: 900px;
+  margin: 0 auto 50px;
+  font-size: 1.05rem;
+  color: var(--medium-gray);
+  line-height: 1.8;
+}
+
+.coverage-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.stat-card {
+  background: var(--light-gray);
+  padding: 30px 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  background: white;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--primary-blue);
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: var(--medium-gray);
+  font-weight: 600;
+}
+
+/* Service Details Section */
+.service-details {
+  padding: 60px 20px;
+  background: var(--light-gray);
+}
+
+.service-details h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: var(--dark-gray);
+  margin-bottom: 40px;
+  font-weight: 800;
+}
+
+.service-types-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-type {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  border-left: 4px solid var(--primary-blue);
+}
+
+.service-type:hover {
+  transform: translateX(5px);
+  box-shadow: var(--shadow-md);
+  border-left-color: var(--secondary-orange);
+}
+
+.service-type h3 {
+  font-size: 1.3rem;
+  color: var(--primary-blue);
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.service-type p {
+  color: var(--medium-gray);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* CTA Section */
+.locations-cta {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #0066CC 0%, #004C99 100%);
+  color: white;
+  text-align: center;
+}
+
+.locations-cta h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.locations-cta p {
+  font-size: 1.05rem;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cta-button-primary {
+  background: var(--secondary-orange);
+  color: white;
+  padding: 15px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button-primary:hover {
+  background: #FF8C5A;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+}
+
+.cta-button-secondary {
+  background: white;
+  color: var(--primary-blue);
+  padding: 15px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button-secondary:hover {
+  background: var(--light-gray);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .locations-hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .locations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .coverage-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+  }
+
+  .service-types-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-button-primary,
+  .cta-button-secondary {
+    width: 100%;
+    max-width: 300px;
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "quickhaul-haulers-nextjs",
+  "version": "1.0.0",
+  "description": "SEO-optimized hauler rental website built with Next.js 14",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [
+    "hauler rental",
+    "dumpster rental",
+    "waste management",
+    "roll-off dumpsters"
+  ],
+  "author": "Quick Haul Haulers",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^16.1.1",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  }
+}

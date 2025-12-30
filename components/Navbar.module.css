@@ -1,0 +1,204 @@
+.navbar {
+  background: linear-gradient(135deg, #0066CC 0%, #004C99 100%);
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: navReveal 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes navReveal {
+  0% {
+    transform: translateY(-120%) scaleY(0.3);
+    opacity: 0;
+    filter: blur(10px);
+  }
+  40% {
+    opacity: 0.8;
+    filter: blur(5px);
+  }
+  70% {
+    transform: translateY(8px) scaleY(1.02);
+    opacity: 1;
+    filter: blur(0px);
+  }
+  85% {
+    transform: translateY(-3px) scaleY(0.98);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+.navbar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #FF6B35 0%, #FFB800 50%, #FF6B35 100%);
+  background-size: 200% 100%;
+  animation: gradientShift 3s ease infinite;
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+}
+
+.navbarContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.navbarLogo {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: fadeInLeftBounce 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.3s both;
+}
+
+@keyframes fadeInLeftBounce {
+  0% {
+    transform: translateX(-100px) rotate(-8deg) scale(0.8);
+    opacity: 0;
+    filter: blur(8px);
+  }
+  40% {
+    opacity: 0.7;
+    filter: blur(4px);
+  }
+  70% {
+    transform: translateX(12px) rotate(3deg) scale(1.05);
+    opacity: 1;
+    filter: blur(0px);
+  }
+  85% {
+    transform: translateX(-4px) rotate(-1deg) scale(0.98);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg) scale(1);
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+.navbarLogo:hover {
+  transform: scale(1.08) rotate(-2deg);
+  text-shadow: 0 0 20px rgba(255, 107, 53, 0.6), 2px 2px 12px rgba(255, 107, 53, 0.4);
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    text-shadow: 0 0 20px rgba(255, 107, 53, 0.6), 2px 2px 12px rgba(255, 107, 53, 0.4);
+  }
+  50% {
+    text-shadow: 0 0 30px rgba(255, 184, 0, 0.8), 2px 2px 15px rgba(255, 107, 53, 0.6);
+  }
+}
+
+.navMenu {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  margin: 0;
+  animation: popIn 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
+}
+
+.navItem:nth-child(1) { animation-delay: 0.5s; }
+.navItem:nth-child(2) { animation-delay: 0.6s; }
+.navItem:nth-child(3) { animation-delay: 0.7s; }
+.navItem:nth-child(4) { animation-delay: 0.8s; }
+.navItem:nth-child(5) { animation-delay: 0.9s; }
+
+@keyframes popIn {
+  0% {
+    transform: translateY(40px) scale(0.7) rotateX(-90deg);
+    opacity: 0;
+    filter: blur(6px);
+  }
+  30% {
+    opacity: 0.6;
+    filter: blur(3px);
+  }
+  50% {
+    transform: translateY(-8px) scale(1.12) rotateX(12deg);
+    opacity: 1;
+    filter: blur(0px);
+  }
+  70% {
+    transform: translateY(2px) scale(0.96) rotateX(-3deg);
+  }
+  100% {
+    transform: translateY(0) scale(1) rotateX(0deg);
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+.navLinks {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  padding: 8px 16px;
+  position: relative;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}
+
+.navLinks::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #FF6B35, #FFB800);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.navLinks:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-4px) scale(1.08);
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4), 0 0 15px rgba(255, 184, 0, 0.2);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.navLinks:hover::after {
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(255, 184, 0, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+  .navMenu {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
