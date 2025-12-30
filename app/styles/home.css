@@ -20,11 +20,18 @@
   right: 0;
   bottom: 0;
   z-index: 0;
-  background:
-    linear-gradient(135deg, rgba(44, 62, 80, 0.5) 0%, rgba(52, 73, 94, 0.6) 100%),
-    url('/images/Hero%20Image.png') center/cover no-repeat;
+  background: url('/images/Hero%20Image.png') center center no-repeat;
   background-size: cover;
-  background-position: center;
+}
+
+.hero-background::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(44, 62, 80, 0.3) 0%, rgba(52, 73, 94, 0.4) 100%);
 }
 
 @keyframes backgroundShift {
