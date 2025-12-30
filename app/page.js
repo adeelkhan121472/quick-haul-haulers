@@ -263,66 +263,66 @@ export default function Home() {
               <p>Professional hauler rental services in your area. We're proud to serve millions of customers across the United States with our reliable, affordable hauler rental services. Each location is staffed with experienced professionals who understand the unique waste management needs and regulations of their local area. From bustling metropolitan areas to growing suburban communities, Quick Haul Haulers is your trusted partner for waste removal.</p>
             </div>
             <div className="cities-grid">
-              <div className="city-card">
+              <Link href="/locations/new-york" className="city-card">
                 <span className="city-icon">📍</span>
                 <h3>New York</h3>
                 <p>All 5 boroughs</p>
-              </div>
-              <div className="city-card">
+              </Link>
+              <Link href="/locations/los-angeles" className="city-card">
                 <span className="city-icon">📍</span>
                 <h3>Los Angeles</h3>
                 <p>Greater LA area</p>
-              </div>
-              <div className="city-card">
+              </Link>
+              <Link href="/locations/chicago" className="city-card">
                 <span className="city-icon">📍</span>
                 <h3>Chicago</h3>
                 <p>Metro Chicago</p>
-              </div>
-              <div className="city-card">
+              </Link>
+              <Link href="/locations/houston" className="city-card">
                 <span className="city-icon">📍</span>
                 <h3>Houston</h3>
                 <p>Harris County</p>
-              </div>
-              <div className="city-card">
+              </Link>
+              <Link href="/locations/phoenix" className="city-card">
                 <span className="city-icon">📍</span>
                 <h3>Phoenix</h3>
                 <p>Valley area</p>
-              </div>
-              <div className="city-card">
+              </Link>
+              <Link href="/locations/philadelphia" className="city-card">
                 <span className="city-icon">📍</span>
                 <h3>Philadelphia</h3>
                 <p>Philly metro</p>
-              </div>
-              <div className="city-card">
+              </Link>
+              <Link href="/locations/san-antonio" className="city-card">
                 <span className="city-icon">📍</span>
                 <h3>San Antonio</h3>
                 <p>Bexar County</p>
-              </div>
-              <div className="city-card">
+              </Link>
+              <Link href="/locations/san-diego" className="city-card">
                 <span className="city-icon">📍</span>
                 <h3>San Diego</h3>
                 <p>San Diego County</p>
-              </div>
-              <div className="city-card">
+              </Link>
+              <Link href="/locations/dallas" className="city-card">
                 <span className="city-icon">📍</span>
                 <h3>Dallas</h3>
                 <p>DFW metroplex</p>
-              </div>
-              <div className="city-card">
+              </Link>
+              <Link href="/locations/san-jose" className="city-card">
                 <span className="city-icon">📍</span>
                 <h3>San Jose</h3>
                 <p>Silicon Valley</p>
-              </div>
-              <div className="city-card">
+              </Link>
+              <Link href="/locations/austin" className="city-card">
                 <span className="city-icon">📍</span>
                 <h3>Austin</h3>
                 <p>Travis County</p>
-              </div>
-              <div className="city-card">
+              </Link>
+              <Link href="/locations/jacksonville" className="city-card">
                 <span className="city-icon">📍</span>
                 <h3>Jacksonville</h3>
                 <p>Duval County</p>
-              </div>
+              </Link>
             </div>
             <div className="cta-center">
               <Link href="/locations" className="cta-button-secondary">View All Locations</Link>

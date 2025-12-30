@@ -642,6 +642,9 @@
   transition: all 0.3s ease;
   box-shadow: var(--shadow-sm);
   border: 2px solid transparent;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
 }
 
 .city-card:hover {
