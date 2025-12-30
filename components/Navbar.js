@@ -10,8 +10,14 @@ export default function Navbar() {
       <div className={styles.navbarContainer}>
         <Link href="/" className={styles.navbarLogo}>
           <div className={styles.logoContainer}>
-            <span className={styles.logoIcon}>🚛</span>
-            <span className={styles.logoText}>Quick Haul Haulers</span>
+            <Image
+              src="/logo.svg"
+              alt="Quick Haul Haulers Logo"
+              width={180}
+              height={54}
+              priority
+              className={styles.logoImage}
+            />
           </div>
         </Link>
         <ul className={styles.navMenu}>
