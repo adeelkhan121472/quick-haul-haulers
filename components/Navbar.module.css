@@ -1,13 +1,14 @@
 .navbar {
-  background: linear-gradient(135deg, #0066CC 0%, #004C99 100%);
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   padding: 0 20px;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   animation: navReveal 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  border-bottom: 2px solid #dee2e6;
 }
 
 @keyframes navReveal {
@@ -177,7 +178,7 @@
 }
 
 .navLinks {
-  color: rgba(255, 255, 255, 0.9);
+  color: #2c3e50;
   text-decoration: none;
   font-weight: 600;
   font-size: 1.05rem;
@@ -200,10 +201,10 @@
 }
 
 .navLinks:hover {
-  color: white;
-  background: rgba(255, 255, 255, 0.15);
-  transform: translateY(-4px) scale(1.08);
-  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4), 0 0 15px rgba(255, 184, 0, 0.2);
+  color: #FF6B35;
+  background: rgba(255, 107, 53, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.2);
   transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
