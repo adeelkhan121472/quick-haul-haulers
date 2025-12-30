@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './Navbar.module.css';
 
 export default function Navbar() {
@@ -8,7 +9,10 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       <div className={styles.navbarContainer}>
         <Link href="/" className={styles.navbarLogo}>
-          Quick Haul Haulers
+          <div className={styles.logoContainer}>
+            <span className={styles.logoIcon}>🚛</span>
+            <span className={styles.logoText}>Quick Haul Haulers</span>
+          </div>
         </Link>
         <ul className={styles.navMenu}>
           <li className={styles.navItem}>
