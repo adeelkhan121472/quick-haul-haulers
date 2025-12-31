@@ -175,7 +175,7 @@ export default function Home() {
               </div>
               <div className="services-image">
                 <Image
-                  src="/images/Dum pic.png"
+                  src="/images/dum-pic.png"
                   alt="Professional Haulers"
                   width={600}
                   height={400}
