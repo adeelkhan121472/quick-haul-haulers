@@ -13,8 +13,8 @@ export default function Navbar() {
             <Image
               src="/Logo-%20Quick%20Haul.png"
               alt="Quick Haul Haulers Logo"
-              width={60}
-              height={60}
+              width={80}
+              height={80}
               priority
               className={styles.logoImage}
             />
