@@ -20,18 +20,7 @@
   right: 0;
   bottom: 0;
   z-index: 0;
-  background: url('/images/hero-image.png') center center no-repeat;
-  background-size: cover;
-}
-
-.hero-background::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(44, 62, 80, 0.3) 0%, rgba(52, 73, 94, 0.4) 100%);
+  background: linear-gradient(135deg, rgba(44, 62, 80, 0.95) 0%, rgba(52, 73, 94, 0.98) 100%);
 }
 
 @keyframes backgroundShift {
@@ -148,7 +137,11 @@
 }
 
 .hero-stats {
-  display: none;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .stat {
