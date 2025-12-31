@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://quick-haul-haulers.vercel.app';
+  const baseUrl = 'https://quickhauldumpsters.site';
 
   const cities = [
     'new-york',

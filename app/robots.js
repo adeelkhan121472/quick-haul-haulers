@@ -1,5 +1,5 @@
 export default function robots() {
-  const baseUrl = 'https://quick-haul-haulers.vercel.app';
+  const baseUrl = 'https://quickhauldumpsters.site';
 
   return {
     rules: {
