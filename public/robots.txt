@@ -1,0 +1,10 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Disallow admin areas
+Disallow: /api/
+Disallow: /_next/
+
+# Sitemap
+Sitemap: https://quickhauldumpsters.site/sitemap.xml
