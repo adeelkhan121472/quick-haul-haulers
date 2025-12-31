@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { pageSEO, haulerSizes } from '@/lib/seo-config';
 import { getReviewSchema } from '@/lib/schema-markup';
 
@@ -173,10 +174,13 @@ export default function Home() {
                 <Link href="/services" className="cta-button-secondary">Explore All Hauler Sizes</Link>
               </div>
               <div className="services-image">
-                <div className="image-placeholder">
-                  <span className="placeholder-icon">🚛</span>
-                  <p>Professional Haulers</p>
-                </div>
+                <Image
+                  src="/images/Dum pic.png"
+                  alt="Professional Haulers"
+                  width={600}
+                  height={400}
+                  className="hauler-image"
+                />
               </div>
             </div>
           </div>
