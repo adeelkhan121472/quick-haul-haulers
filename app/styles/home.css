@@ -315,6 +315,14 @@
   justify-content: center;
 }
 
+.hauler-image {
+  border-radius: 16px;
+  box-shadow: var(--shadow-md);
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
 .image-placeholder {
   background: white;
   border-radius: 16px;
