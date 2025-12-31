@@ -11,7 +11,7 @@ export default function Navbar() {
         <Link href="/" className={styles.navbarLogo}>
           <div className={styles.logoContainer}>
             <Image
-              src="/Logo.png"
+              src="/Logo-%20Quick%20Haul.png"
               alt="Quick Haul Haulers Logo"
               width={60}
               height={60}
