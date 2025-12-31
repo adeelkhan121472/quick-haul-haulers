@@ -20,7 +20,10 @@
   right: 0;
   bottom: 0;
   z-index: 0;
-  background: linear-gradient(135deg, rgba(44, 62, 80, 0.95) 0%, rgba(52, 73, 94, 0.98) 100%);
+  background:
+    linear-gradient(135deg, rgba(44, 62, 80, 0.75) 0%, rgba(52, 73, 94, 0.85) 100%),
+    url('/images/cover-image.png') center center no-repeat;
+  background-size: cover;
 }
 
 @keyframes backgroundShift {
