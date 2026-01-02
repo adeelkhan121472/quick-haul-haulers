@@ -71,6 +71,16 @@ export default function ContactPage() {
               <button className="info-link chat-button">Start Chat</button>
               <span className="info-hours">Available Now</span>
             </div>
+
+            <div className="contact-info-card">
+              <div className="info-icon">📍</div>
+              <h3>Visit Us</h3>
+              <p>Our main office</p>
+              <a href="https://maps.google.com/?q=15210+Fitzhugh+Rd,+Austin,+TX+78736" target="_blank" rel="noopener noreferrer" className="info-link">
+                15210 Fitzhugh Rd<br/>Austin, TX 78736, USA
+              </a>
+              <span className="info-hours">Mon-Fri: 8AM-6PM</span>
+            </div>
           </div>
         </div>
       </section>
