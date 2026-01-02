@@ -79,6 +79,9 @@ export default function ContactPage() {
               <a href="https://maps.google.com/?q=15210+Fitzhugh+Rd,+Austin,+TX+78736" target="_blank" rel="noopener noreferrer" className="info-link">
                 15210 Fitzhugh Rd<br/>Austin, TX 78736, USA
               </a>
+              <a href="tel:+15122344407" className="info-link" style={{marginTop: '10px', display: 'block'}}>
+                +1 (512) 234-4407
+              </a>
               <span className="info-hours">Mon-Fri: 8AM-6PM</span>
             </div>
           </div>
